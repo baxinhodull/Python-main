@@ -1,13 +1,11 @@
-def verificar_paridade():
+def verificar_paridade(inicio, fim):
+ 
     
-    numeros = list(range(1, 11))
-
-  
-    for i in numeros:
-        
+    for i in range(inicio, fim + 1):
+    
         if i % 2 == 0:
             print(f"O número {i} é par.")
         else:
             print(f"O número {i} é ímpar.")
 
-verificar_paridade()
+verificar_paridade(1, 10)
